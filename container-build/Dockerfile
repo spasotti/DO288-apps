@@ -2,8 +2,8 @@
 FROM httpdparent 
 
 LABEL io.k8s.description="basic http server" \
-      io.k8s.display-name="http server"
-      io.openshift.expose-service="8080:http"
+      io.k8s.display-name="http server" \
+      io.openshift.expose-service="8080:http" \
       io.openshift.tags="apache, htppd"
       
 EXPOSE 8080
