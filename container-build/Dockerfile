@@ -9,7 +9,7 @@ LABEL io.k8s.description="basic http server" \
 EXPOSE 8080
 
 RUN chgrp -R 0 /var/log/httpd /var/run/httpd && \
-    chown -R g=u /var/log/httpd /var/run/httpd
+    chmod -R g=u /var/log/httpd /var/run/httpd
 
 USER 1001
 
